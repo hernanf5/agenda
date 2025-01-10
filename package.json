@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "recetas electronicas",
   "type": "module",
-  "main": "server.js",
+  "main": "./config/server.js",
   "scripts": {
     "build:css": "postcss src/input.css -o src/output.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon database.js"
   },
   "author": "Hernan Funes",
   "license": "ISC",

@@ -1,5 +1,9 @@
-import { DataTypes } from "sequelize";
-// falta el import de sequelize que es la ruta de conexion a la base de datos
+import { Sequelize, DataTypes } from "sequelize";
+import connection from "../database/database.js";
+
+const sequelize = new Sequelize(connection);
+
+
 
 const Paciente = sequelize.define('Paciente', {
     id_paciente: {

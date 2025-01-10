@@ -10,5 +10,8 @@ app.use(express.static("src"));
 app.get('/', (req, res) => {
     res.render('login', {body: "Prueba pug"});
 })
+app.get('/main', (req, res) => {
+    res.render('main', {body: "Prueba pug"});
+})
 
 app.listen(3000, () => console.log("Listening on port 3000"));
