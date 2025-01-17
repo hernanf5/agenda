@@ -10,11 +10,18 @@ html(lang="es")
             div.flex.items-center
                 img(src="/recipe.png" alt="logo" class="h-[40px]")
                 p Agenda
-            ul.flex 
-                li item 1
-                li item 2
-                li item 3
-        div.bg-slate-100.w-full.h-screen
+            ul.flex
+                li.px-2 Inicio
+                li.px-2 Turnos
+                li.px-2 Profesionales
+                li.px-2 Pacientes
+        div(class="bg-slate-100 w-full h-screen flex-col items-center")
+            h2(class="font-bold text-3xl p-5 md:text-4xl text-center animate-slidein opacity-0 [--slidein-delay:300ms]") Que desea realizar?
+            div(class="flex flex-col items-center animate-slidein opacity-0 [--slidein-delay:500ms]")
+                button(class ="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-48 my-4" type="button") Registrar paciente
+                button(class ="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-48 my-4" type="button") Registrar profesional 
+                button(class ="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-48 my-4" type="button") Cargar turno
+                button(class ="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-48 my-4" type="button") Consultar turnos 
             
 
     footer
